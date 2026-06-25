@@ -30,6 +30,26 @@ header {
     padding: 60px 20px;
 }
 
+/* NEW PHOTO STYLING */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    flex-shrink: 0;
+}
+
+.header-text {
+    flex: 1;
+}
+
 header h1 {
     font-size: 3rem;
 }
@@ -107,7 +127,21 @@ footer {
     text-align: center;
     padding: 30px;
 }
+
+@media(max-width:700px) {
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+}
 </style>
+
 </head>
 
 <body>
@@ -115,23 +149,37 @@ footer {
 <header>
 <div class="container">
 
+<div class="header-content">
+
+<img src="profile.jpg" alt="Ádám Méreg" class="profile-picture">
+
+<div class="header-text">
+
 <h1>Ádám Méreg</h1>
 
-<h2>Senior Product Manager | Enterprise SaaS | CRM | Dynamics 365 | Fintech</h2>
+<h2>
+Senior Product Manager | Enterprise SaaS | CRM | Dynamics 365 | Fintech
+</h2>
 
 <div class="contact">
 <p>📍 Brno, Czech Republic</p>
 <p>📞 +420 727 898 906</p>
 <p>✉️ mereg.adam@gmail.com</p>
 <p>
-🔗 <a href="https://www.linkedin.com/in/adam-mereg/" target="_blank">
+🔗 
+<a href="https://www.linkedin.com/in/adam-mereg/" target="_blank">
 LinkedIn Profile
 </a>
 </p>
 </div>
 
 </div>
+
+</div>
+
+</div>
 </header>
+
 
 <section>
 <div class="container">
@@ -150,12 +198,14 @@ needs into successful products, and driving business value through agile deliver
 </div>
 </section>
 
+
 <section style="background:#f9fafb;">
 <div class="container">
 
 <h3>Core Skills</h3>
 
 <div class="skills">
+
 <div class="skill">Product Management</div>
 <div class="skill">Product Ownership</div>
 <div class="skill">Roadmapping</div>
@@ -174,19 +224,23 @@ needs into successful products, and driving business value through agile deliver
 <div class="skill">Jira</div>
 <div class="skill">System Integration</div>
 <div class="skill">Data Migration</div>
+
 </div>
 
 </div>
 </section>
-
 <section>
 <div class="container">
 
 <h3>Professional Experience</h3>
 
+
 <div class="job">
+
 <h4>Product Manager</h4>
+
 <div class="company">RWS (Moravia), Brno</div>
+
 <div class="period">February 2019 – February 2026</div>
 
 <ul>
@@ -198,11 +252,16 @@ needs into successful products, and driving business value through agile deliver
 <li>Improved release quality by reducing post-deployment issues by 93%.</li>
 <li>Supported 200+ end users and drove continuous product improvements.</li>
 </ul>
+
 </div>
 
+
 <div class="job">
+
 <h4>Senior IT Business Analyst</h4>
+
 <div class="company">EmbedIT (Home Credit International), Brno</div>
+
 <div class="period">January 2016 – June 2018</div>
 
 <ul>
@@ -211,11 +270,16 @@ needs into successful products, and driving business value through agile deliver
 <li>Coordinated business transformation projects and data migration initiatives.</li>
 <li>Facilitated stakeholder workshops, UAT activities and executive presentations.</li>
 </ul>
+
 </div>
 
+
 <div class="job">
+
 <h4>IT Business Analyst / Site Manager</h4>
+
 <div class="company">Loxon Solutions Zrt., Budapest</div>
+
 <div class="period">November 2012 – December 2015</div>
 
 <ul>
@@ -224,11 +288,16 @@ needs into successful products, and driving business value through agile deliver
 <li>Coordinated testing and documentation activities.</li>
 <li>Modeled business processes using UML.</li>
 </ul>
+
 </div>
 
+
 <div class="job">
+
 <h4>Divisional CRM Responsible</h4>
+
 <div class="company">Robert Bosch Kft., Budapest</div>
+
 <div class="period">December 2011 – November 2012</div>
 
 <ul>
@@ -236,12 +305,17 @@ needs into successful products, and driving business value through agile deliver
 <li>Implemented CRM enhancements reducing administration costs by 22%.</li>
 <li>Provided reporting and analytics for management.</li>
 </ul>
+
 </div>
+
 
 </div>
 </section>
 
+
+
 <section style="background:#f9fafb;">
+
 <div class="container">
 
 <h3>Certifications</h3>
@@ -256,31 +330,53 @@ needs into successful products, and driving business value through agile deliver
 </ul>
 
 </div>
+
 </section>
 
+
+
 <section>
+
 <div class="container">
 
 <h3>Education</h3>
 
+
 <div class="education-item">
+
 <strong>Marketing MSc</strong><br>
+
 Corvinus University of Budapest<br>
+
 2010–2013
+
 </div>
+
+
 
 <div class="education-item">
+
 <strong>Bachelor's Degree in Commerce and Marketing</strong><br>
+
 University of Pécs<br>
+
 2006–2010
-</div>
 
 </div>
+
+
+</div>
+
 </section>
 
+
+
 <footer>
+
 <p>© 2026 Ádám Méreg</p>
+
 </footer>
+
 
 </body>
 </html>
